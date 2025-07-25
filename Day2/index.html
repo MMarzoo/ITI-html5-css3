@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <svg width="500" height="500">
+      <circle
+        cx="250"
+        cy="200"
+        r="150"
+        fill="transparent"
+        stroke="black"
+      ></circle>
+      <text x="120" y="180" fill="url(#text)" font-size="60">Mohamed</text>
+      <defs>
+        <linearGradient id="text" x1="0" y1="65%" x2="100%" y2="85%">
+          <stop offset="0" stop-color="red"></stop>
+          <stop offset="50%" stop-color="blue"></stop>
+          <stop offset="75%" stop-color="green"></stop>
+          <stop offset="100%" stop-color="yellow"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+  </body>
+</html>
