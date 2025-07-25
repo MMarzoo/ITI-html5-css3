@@ -1,0 +1,46 @@
+#main-card {
+  width: 60%;
+  height: 200px;
+}
+
+header {
+  background-color: blue;
+  height: 20%;
+  text-align: center;
+}
+
+nav {
+  background-color: red;
+  height: 20%;
+  text-align: center;
+}
+
+section {
+  float: left;
+  background-color: green;
+  width: 60%;
+  height: 20%;
+  text-align: center;
+}
+
+article {
+  float: left;
+  background-color: lightblue;
+  width: 60%;
+  height: 20%;
+  text-align: center;
+}
+
+aside {
+  float: right;
+  background-color: bisque;
+  width: 40%;
+  height: 40%;
+  text-align: center;
+}
+
+footer {
+  background-color: yellow;
+  text-align: center;
+  height: 20%;
+}

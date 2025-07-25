@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Source</title>
+  </head>
+  <body>
+    <video controls>
+      <source src="video/sample.mp4" />
+      <source src="video/sample.ogv" />
+      <source src="video/sample.webm" />
+    </video>
+    <br />
+    <button onclick="playVideo(this)">play</button><br />
+    <audio controls muted>
+      <source src="audio/bgsound.mp3" />
+      <source src="audio/bgsound.wav" />
+    </audio>
+    <script>
+      var video = document.querySelector("video");
+      function playVideo(button) {
+        if (video.paused) {
+          video.play();
+          button.innerHTML = "pause";
+        } else {
+          video.pause();
+          button.innerHTML = "play";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact page</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <!--Full Name-->
+      <label for="name">Full Name: </label>
+      <input
+        minlength="3"
+        maxlength="9"
+        type="text"
+        id="name"
+        placeholder="Enter your Full Name"
+        pattern="[a-zA-z]{3,9}"
+      />
+      <!-- <span>Not Valid</span> -->
+      <br />
+
+      <!--Email-->
+      <label for="email">Email: </label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+      <br />
+
+      <!--Telephone-->
+      <label for="tel">Telephone: </label>
+      <input type="tel" id="tel" />
+      <br />
+
+      <!--Age-->
+      <label for="age">Age:</label>
+      <input type="number" id="age" min="18" max="35" />
+      <br />
+
+      <!--Inquiry-->
+      <label for="inquiry">Inquiry: </label>
+      <input list="inquiries" id="Inquiry" />
+      <datalist id="inquiries">
+        <option value="Techincal Support">Techincal Support</option>
+        <option value="General Inquiry">General Inquiry</option>
+        <option value="Feedback">Feedback</option>
+      </datalist>
+      <br />
+
+      <!--submit-->
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
